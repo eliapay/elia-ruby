@@ -1,0 +1,10 @@
+/elia_ruby-*.gem
+/Gemfile.lock
+.rvmrc
+.rspec_status
+Gemfile.lock
+tags
+/.bundle/
+coverage/
+.idea/
+.ruby-version

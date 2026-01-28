@@ -1,0 +1,126 @@
+# ISO 18245 MCC Ranges
+# Defines the standard industry classification ranges for Merchant Category Codes
+# Source: ISO 18245 Standard
+---
+- start: "0000"
+  end: "0699"
+  name: "Reserved"
+  description: "Reserved for ISO use"
+  reserved: true
+
+- start: "0700"
+  end: "0999"
+  name: "Agricultural Services"
+  description: "Agricultural services including veterinary and horticultural services"
+  reserved: false
+
+- start: "1000"
+  end: "1499"
+  name: "Reserved"
+  description: "Reserved for future use"
+  reserved: true
+
+- start: "1500"
+  end: "2999"
+  name: "Contracted Services"
+  description: "Contracted services including general and specialty construction contractors"
+  reserved: false
+
+- start: "3000"
+  end: "3350"
+  name: "Airlines"
+  description: "Specific airline codes for major carriers"
+  reserved: false
+  private_use: true
+
+- start: "3351"
+  end: "3500"
+  name: "Car Rentals"
+  description: "Specific car rental company codes"
+  reserved: false
+  private_use: true
+
+- start: "3501"
+  end: "3999"
+  name: "Lodging"
+  description: "Specific hotel and lodging establishment codes"
+  reserved: false
+  private_use: true
+
+- start: "4000"
+  end: "4799"
+  name: "Transportation"
+  description: "Transportation services including railroads, airlines, buses, and freight"
+  reserved: false
+
+- start: "4800"
+  end: "4999"
+  name: "Utilities"
+  description: "Utility services including telecommunications, electricity, gas, and water"
+  reserved: false
+
+- start: "5000"
+  end: "5599"
+  name: "Retail Outlets"
+  description: "Retail outlets including wholesale, department stores, and specialty retail"
+  reserved: false
+
+- start: "5600"
+  end: "5699"
+  name: "Clothing Outlets"
+  description: "Clothing and apparel stores"
+  reserved: false
+
+- start: "5700"
+  end: "5999"
+  name: "Miscellaneous Retail"
+  description: "Miscellaneous retail stores including food service, pharmacies, and specialty shops"
+  reserved: false
+
+- start: "6000"
+  end: "7299"
+  name: "Service Providers"
+  description: "Service provider businesses including financial services, lodging, and personal services"
+  reserved: false
+
+- start: "7300"
+  end: "7529"
+  name: "Business Services"
+  description: "Business services including advertising, consulting, and equipment rental"
+  reserved: false
+
+- start: "7530"
+  end: "7799"
+  name: "Repair Services"
+  description: "Repair and automotive services"
+  reserved: false
+
+- start: "7800"
+  end: "7999"
+  name: "Entertainment"
+  description: "Amusement and entertainment including gambling, recreation, and sports"
+  reserved: false
+
+- start: "8000"
+  end: "8999"
+  name: "Professional Services"
+  description: "Professional services and membership organizations including healthcare, legal, and education"
+  reserved: false
+
+- start: "9000"
+  end: "9199"
+  name: "Reserved for ISO"
+  description: "Reserved for ISO use"
+  reserved: true
+
+- start: "9200"
+  end: "9402"
+  name: "Government Services"
+  description: "Government services including courts, fines, taxes, and postal services"
+  reserved: false
+
+- start: "9403"
+  end: "9999"
+  name: "Other"
+  description: "Other services and intra-company purchases"
+  reserved: false

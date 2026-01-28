@@ -1,0 +1,293 @@
+# Risk-Based MCC Categories for Payment Control
+# These categories are commonly used for merchant restrictions, spend controls,
+# and risk management in payment systems.
+---
+airlines:
+  name: "Airlines"
+  description: "Airlines and air carriers only"
+  codes:
+    - "3000-3350"  # Specific airline codes (United, Delta, American, etc.)
+    - "4415"       # Air Courier Services
+    - "4511"       # Airlines, Air Carriers
+
+gambling:
+  name: "Gambling"
+  description: "Casinos, betting, lottery, and gaming"
+  codes:
+    - "7800"  # Government Owned Lotteries (US only)
+    - "7801"  # Government Licensed Casinos (Online Gambling)
+    - "7802"  # Government Licensed Horse/Dog Racing
+    - "7995"  # Betting/Casino Gambling
+    - "9406"  # Government-owned Lottery (non-US)
+
+adult:
+  name: "Adult Entertainment"
+  description: "Adult content and services"
+  codes:
+    - "5967"  # Direct Marketing - Inbound Teleservices Merchant
+    - "7273"  # Dating/Escort Services
+    - "7297"  # Massage Parlors
+
+crypto:
+  name: "Cryptocurrency"
+  description: "Cryptocurrency and digital asset exchanges"
+  codes:
+    - "6051"  # Non-FI Money Orders, Foreign Currency, Cryptocurrency
+    - "6211"  # Security Brokers/Dealers
+
+high_risk:
+  name: "High Risk"
+  description: "Industries with high chargeback or fraud rates"
+  codes:
+    - "5962"  # Direct Marketing - Travel Related
+    - "5966"  # Direct Marketing - Outbound Telemarketing
+    - "5967"  # Direct Marketing - Inbound Teleservices
+    - "5968"  # Direct Marketing - Subscription
+    - "7841"  # Video Tape Rental Stores
+    - "5933"  # Pawn Shops
+    - "5935"  # Wrecking and Salvage Yards
+
+travel:
+  name: "Travel"
+  description: "Travel services (excluding airlines)"
+  codes:
+    - "3351-3500"  # Car Rentals
+    - "3501-3999"  # Hotels and Lodging
+    - "4411"       # Cruise Lines
+    - "4722"       # Travel Agencies
+    - "4723"       # Package Tour Operators
+    - "7011"       # Hotels and Motels
+    - "7012"       # Timeshares
+    - "7032"       # Sporting and Recreational Camps
+    - "7033"       # Trailer Parks and Campgrounds
+    - "7512"       # Car Rental
+
+fuel:
+  name: "Fuel"
+  description: "Gas stations and fuel dispensers"
+  codes:
+    - "5172"  # Petroleum Products
+    - "5541"  # Service Stations
+    - "5542"  # Automated Fuel Dispensers
+    - "5983"  # Fuel Dealers
+
+financial:
+  name: "Financial Services"
+  description: "Banks, money orders, wire transfers, and stored value"
+  codes:
+    - "6010"  # Financial Institutions - Manual Cash
+    - "6011"  # Financial Institutions - Automated Cash
+    - "6012"  # Financial Institutions - Merchandise and Services
+    - "6050"  # Quasi Cash - Financial Institutions
+    - "6051"  # Non-FI Money Orders
+    - "6211"  # Security Brokers/Dealers
+    - "6300"  # Insurance Sales
+    - "6513"  # Real Estate Agents
+    - "6540"  # Non-FI Stored Value Card
+    - "4829"  # Wire Transfers and Money Orders
+
+legal_services:
+  name: "Legal Services"
+  description: "Attorneys, bail bonds, legal services"
+  codes:
+    - "8111"  # Legal Services and Attorneys
+    - "9223"  # Bail and Bond Payments
+
+healthcare:
+  name: "Healthcare"
+  description: "Medical services, hospitals, and pharmacies"
+  codes:
+    - "4119"  # Ambulance Services
+    - "5122"  # Drugs and Proprietary
+    - "5912"  # Drug Stores and Pharmacies
+    - "8011"  # Doctors
+    - "8021"  # Dentists and Orthodontists
+    - "8031"  # Osteopaths
+    - "8041"  # Chiropractors
+    - "8042"  # Optometrists
+    - "8043"  # Opticians
+    - "8049"  # Podiatrists
+    - "8050"  # Nursing and Personal Care Facilities
+    - "8062"  # Hospitals
+    - "8071"  # Medical and Dental Laboratories
+    - "8099"  # Medical Services
+
+government:
+  name: "Government"
+  description: "Government services, fines, and taxes"
+  codes:
+    - "9211"  # Court Costs
+    - "9222"  # Fines
+    - "9223"  # Bail and Bond Payments
+    - "9311"  # Tax Payments
+    - "9399"  # Government Services
+    - "9402"  # Postal Services - Government Only
+    - "9405"  # Intra-Government Purchases
+
+food_and_dining:
+  name: "Food and Dining"
+  description: "Restaurants, fast food, and grocery stores"
+  codes:
+    - "5411"  # Grocery Stores, Supermarkets
+    - "5422"  # Freezer and Locker Meat Provisioners
+    - "5441"  # Candy, Nut, Confectionery
+    - "5451"  # Dairy Products
+    - "5462"  # Bakeries
+    - "5499"  # Miscellaneous Food Stores
+    - "5811"  # Caterers
+    - "5812"  # Eating Places, Restaurants
+    - "5813"  # Drinking Places (Bars)
+    - "5814"  # Fast Food Restaurants
+
+retail:
+  name: "General Retail"
+  description: "General merchandise and department stores"
+  codes:
+    - "5300"  # Wholesale Clubs
+    - "5309"  # Duty Free Stores
+    - "5310"  # Discount Stores
+    - "5311"  # Department Stores
+    - "5331"  # Variety Stores
+    - "5399"  # Miscellaneous General Merchandise
+
+electronics:
+  name: "Electronics"
+  description: "Electronics and computer stores"
+  codes:
+    - "5045"  # Computers and Peripherals
+    - "5732"  # Electronics Stores
+    - "5734"  # Computer Software Stores
+    - "5815"  # Digital Goods - Media
+    - "5816"  # Digital Goods - Games
+    - "5817"  # Digital Goods - Applications
+    - "5818"  # Digital Goods - Large Volume
+
+office_supplies:
+  name: "Office Supplies"
+  description: "Office equipment and supplies"
+  codes:
+    - "5021"  # Office and Commercial Furniture
+    - "5044"  # Office, Photographic Equipment
+    - "5111"  # Stationery, Office Supplies
+    - "5943"  # Stationery, Office and School Supply Stores
+
+education:
+  name: "Education"
+  description: "Schools and educational services"
+  codes:
+    - "8211"  # Elementary and Secondary Schools
+    - "8220"  # Colleges, Universities
+    - "8241"  # Correspondence Schools
+    - "8244"  # Business and Secretarial Schools
+    - "8249"  # Trade and Vocational Schools
+    - "8299"  # Educational Services
+    - "8351"  # Child Care Services
+
+professional_services:
+  name: "Professional Services"
+  description: "Consulting, accounting, and other professional services"
+  codes:
+    - "7311"  # Advertising Services
+    - "7321"  # Credit Reporting Agencies
+    - "7322"  # Collection Agencies
+    - "7372"  # Computer Programming
+    - "7375"  # Information Retrieval Services
+    - "7379"  # Computer Maintenance
+    - "7392"  # Management Consulting
+    - "8911"  # Architectural, Engineering Services
+    - "8931"  # Accounting, Auditing, Bookkeeping
+    - "8999"  # Professional Services
+
+entertainment:
+  name: "Entertainment"
+  description: "Recreation and entertainment (excluding gambling)"
+  codes:
+    - "7829"  # Motion Picture Production
+    - "7832"  # Motion Picture Theaters
+    - "7841"  # Video Tape Rentals
+    - "7911"  # Dance Halls, Studios
+    - "7922"  # Theatrical Producers, Ticket Agencies
+    - "7929"  # Bands, Orchestras
+    - "7932"  # Billiard and Pool
+    - "7933"  # Bowling Alleys
+    - "7941"  # Sports Clubs
+    - "7991"  # Tourist Attractions
+    - "7992"  # Golf Courses
+    - "7993"  # Video Amusement Game Supplies
+    - "7994"  # Video Game Arcades
+    - "7996"  # Amusement Parks
+    - "7997"  # Country Clubs
+    - "7998"  # Aquariums
+    - "7999"  # Recreation Services
+
+automotive:
+  name: "Automotive"
+  description: "Automotive sales, service, and parts"
+  codes:
+    - "5013"  # Motor Vehicle Supplies
+    - "5511"  # Car and Truck Dealers (New and Used)
+    - "5521"  # Car and Truck Dealers (Used Only)
+    - "5531"  # Auto and Home Supply
+    - "5532"  # Automotive Tire Stores
+    - "5533"  # Automotive Parts
+    - "5541"  # Service Stations
+    - "5542"  # Automated Fuel Dispensers
+    - "5551"  # Boat Dealers
+    - "5561"  # Camper, Trailer Dealers
+    - "5571"  # Motorcycle Shops
+    - "5592"  # Motor Home Dealers
+    - "5598"  # Snowmobile Dealers
+    - "5599"  # Misc. Automotive Dealers
+    - "7512"  # Car Rental
+    - "7513"  # Truck Rental
+    - "7519"  # Motor Home Rental
+    - "7523"  # Parking Lots
+    - "7531"  # Automotive Body Repair
+    - "7534"  # Tire Repair
+    - "7535"  # Automotive Paint
+    - "7538"  # Automotive Service Shops
+    - "7542"  # Car Washes
+    - "7549"  # Towing Services
+
+charities:
+  name: "Charities and Non-Profits"
+  description: "Charitable organizations and religious groups"
+  codes:
+    - "8398"  # Charitable and Social Service Organizations
+    - "8641"  # Civic, Social, Fraternal Associations
+    - "8651"  # Political Organizations
+    - "8661"  # Religious Organizations
+    - "8699"  # Membership Organizations
+
+telecom:
+  name: "Telecommunications"
+  description: "Telephone and internet services"
+  codes:
+    - "4812"  # Telecommunication Equipment
+    - "4813"  # Key-entry Telecom
+    - "4814"  # Telecommunication Services
+    - "4815"  # Monthly Summary Telephone
+    - "4816"  # Computer Network Services
+    - "4821"  # Telegraph Services
+    - "4899"  # Cable and Pay Television
+
+utilities:
+  name: "Utilities"
+  description: "Electric, gas, and water services"
+  codes:
+    - "4900"  # Utilities - Electric, Gas, Water
+
+construction:
+  name: "Construction"
+  description: "General and specialty contractors"
+  codes:
+    - "1520"  # General Contractors
+    - "1711"  # Heating, Plumbing, A/C Contractors
+    - "1731"  # Electrical Contractors
+    - "1740"  # Masonry, Plastering Contractors
+    - "1750"  # Carpentry Contractors
+    - "1761"  # Roofing, Siding Contractors
+    - "1771"  # Concrete Work Contractors
+    - "1799"  # Special Trade Contractors
+    - "5039"  # Construction Materials
+    - "5211"  # Lumber and Building Materials
