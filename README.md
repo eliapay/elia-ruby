@@ -179,8 +179,8 @@ This gem aggregates MCC data from multiple authoritative sources:
 
 This gem was inspired by and incorporates ideas from several excellent projects:
 
-- [python-iso18245](https://github.com/alubbock/python-iso18245) - Comprehensive Python MCC library with multi-source data aggregation
-- [mcc-ruby](https://github.com/singlebrook/mcc-ruby) - Ruby gem with IRS reportable data
+- [python-iso18245](https://github.com/jleclanche/python-iso18245) - Comprehensive Python MCC library with multi-source data aggregation
+- [mcc-ruby](https://github.com/calebkm/mcc-ruby) - Ruby gem with IRS reportable data
 - [mcc](https://github.com/maximbilan/mcc) - MCC data collection by Maxim Bilan
 
 ## Development
